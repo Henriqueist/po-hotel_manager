@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.List;
 import java.util.ArrayList;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -55,8 +56,8 @@ public class Hotel implements Serializable {
     private Map<String,Specie> _speciesName;
     private Map<String, Tree> _trees;
     private Map<String, Vaccine> _vaccines;
-    private ArrayList<RegistVaccinatian> _registVaccinatian;
-    private ArrayList<RegistVaccinatian> _niglecenceRegistVaccinatian;
+    private List<RegistVaccinatian> _registVaccinatian;
+    private List<RegistVaccinatian> _niglecenceRegistVaccinatian;
 
 
 
@@ -120,11 +121,11 @@ public class Hotel implements Serializable {
         return _trees;
     }
 
-    private ArrayList<RegistVaccinatian> getRegistVaccinatian(){
+    private List<RegistVaccinatian> getRegistVaccinatian(){
         return _registVaccinatian;
     }
 
-    private ArrayList<RegistVaccinatian> getNiglecenceRegistVaccinatian(){
+    private List<RegistVaccinatian> getNiglecenceRegistVaccinatian(){
         return _niglecenceRegistVaccinatian;
     }
 
